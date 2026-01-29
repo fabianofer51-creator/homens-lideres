@@ -14,6 +14,11 @@
             background-size: cover;
             background-position: center;
         }
+        .gradient-text {
+            background: linear-gradient(90deg, #2a4073, #1e293b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
 <body class="bg-[#fcfcfc] text-[#404040]">
@@ -21,50 +26,63 @@
     <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <span class="text-2xl font-bold text-[#2a4073]">Homens Líderes</span>
-            <div class="hidden md:flex space-x-6">
+            <div class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-gray-700 hover:text-blue-800 font-semibold transition">Início</a>
                 <a href="#projeto" class="text-gray-700 hover:text-blue-800 font-semibold transition">O Projeto</a>
-                <a href="#materiais" class="text-gray-700 hover:text-blue-800 font-semibold transition">Downloads</a>
+                <a href="#materiais" class="text-gray-700 hover:text-blue-800 font-semibold transition">Materiais</a>
                 <a href="https://wa.me/5514991469879" target="_blank" class="text-gray-700 hover:text-blue-800 font-semibold transition">Mentoria</a>
             </div>
-            <a href="https://wa.me/5514991469879" target="_blank" class="bg-[#2a4073] text-white px-5 py-2 rounded-full font-bold hover:bg-blue-900 transition text-sm shadow-md">FALAR COM FABIANO</a>
+            <a href="https://wa.me/5514991469879" target="_blank" class="bg-[#2a4073] text-white px-5 py-2 rounded-full font-bold hover:bg-blue-900 transition text-sm">CONTATO</a>
         </div>
     </nav>
 
-    <header class="hero-bg min-h-[95vh] flex items-center justify-center text-center text-white px-6">
+    <header id="inicio" class="hero-bg min-h-[90vh] flex items-center justify-center text-center text-white px-6">
         <div class="max-w-4xl">
             <h1 class="text-5xl md:text-8xl font-bold mb-6 leading-tight">Homens Líderes</h1>
-            <p class="text-xl md:text-2xl mb-10 opacity-90 max-w-2xl mx-auto italic text-blue-100">"Levantando uma nova geração de homens íntegros, servos e restaurados."</p>
-            
+            <p class="text-xl md:text-2xl mb-10 opacity-90 max-w-2xl mx-auto italic">"Um chamado à restauração da identidade masculina e liderança segundo o propósito de Deus."</p>
             <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
-                <a href="#materiais" class="bg-[#2a4073] hover:scale-105 transition transform px-10 py-4 rounded-lg font-bold text-lg w-full sm:w-auto shadow-xl">BAIXAR KIT DE ESTUDO</a>
-                <a href="#projeto" class="bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white hover:text-[#2a4073] transition px-10 py-4 rounded-lg font-bold text-lg w-full sm:w-auto">CONHECER O PROJETO</a>
+                <a href="#materiais" class="bg-[#2a4073] hover:scale-105 transition transform px-10 py-4 rounded-lg font-bold text-lg w-full sm:w-auto shadow-xl">BAIXAR MATERIAIS</a>
+                <a href="#projeto" class="bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white hover:text-[#2a4073] transition px-10 py-4 rounded-lg font-bold text-lg w-full sm:w-auto">LER SOBRE O PROJETO</a>
             </div>
         </div>
     </header>
 
     <section id="projeto" class="py-24 bg-white">
-        <div class="container mx-auto px-6 max-w-5xl text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-10 text-[#2a4073]">📣 Projeto Homens Líderes</h2>
-            <p class="text-2xl font-light text-gray-500 mb-12 italic">"Um Chamado à Verdadeira Liderança"</p>
-            
-            <div class="grid md:grid-cols-3 gap-8 text-left">
-                <div class="bg-blue-50 p-8 rounded-2xl border-t-4 border-blue-600">
-                    <h3 class="text-xl font-bold mb-4">Propósito</h3>
-                    <p class="text-gray-700">Focar na renovação espiritual e emocional de homens que desejam recuperar sua identidade em Cristo e liderar suas famílias com coragem e verdade.</p>
-                </div>
-                <div class="bg-blue-50 p-8 rounded-2xl border-t-4 border-blue-600">
-                    <h3 class="text-xl font-bold mb-4">Metodologia</h3>
-                    <p class="text-gray-700">Através de estudos bíblicos aplicados à vida moderna, mentorias e grupos de apoio, promovemos a cura de feridas e a capacitação ministerial.</p>
-                </div>
-                <div class="bg-blue-50 p-8 rounded-2xl border-t-4 border-blue-600">
-                    <h3 class="text-xl font-bold mb-4">Resultados</h3>
-                    <p class="text-gray-700">Homens transformados, casamentos restaurados e uma liderança que serve com integridade no mercado de trabalho e na igreja.</p>
-                </div>
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Projeto Homens Líderes</h2>
+                <p class="text-2xl text-gray-500 italic">Um Chamado à Verdadeira Liderança</p>
             </div>
-            
-            <div class="mt-16 inline-block bg-[#2a4073]/5 p-8 rounded-3xl">
-                <p class="text-xl text-[#2a4073] font-semibold">Deseja levar este projeto para sua igreja ou cidade?</p>
-                <a href="https://wa.me/5514991469879" target="_blank" class="mt-6 inline-block bg-[#2a4073] text-white px-8 py-3 rounded-full font-bold hover:bg-blue-900 transition">Agendar Mentoria ou Palestra</a>
+
+            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-8">
+                <p class="text-xl">O <strong>Projeto Homens Líderes</strong> nasceu como uma resposta ao clamor de uma geração de homens que buscam clareza, propósito e restauração. Em um mundo de referências distorcidas, acreditamos que a verdadeira liderança começa com o retorno à nossa identidade original em Cristo.</p>
+                
+                <div class="grid md:grid-cols-2 gap-8 my-12">
+                    <div class="bg-gray-50 p-8 rounded-2xl border-l-4 border-[#2a4073]">
+                        <h3 class="text-[#2a4073] font-bold text-xl mb-3">Nossa Visão</h3>
+                        <p>Levantar uma nova geração de homens íntegros, servos e restaurados, capazes de transformar seus lares, comunidades e nações.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-2xl border-l-4 border-[#2a4073]">
+                        <h3 class="text-[#2a4073] font-bold text-xl mb-3">Nossa Missão</h3>
+                        <p>Fornecer ferramentas bíblicas e apoio emocional para que o homem recupere seu lugar de liderança com amor, responsabilidade e temor a Deus.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-3xl font-bold text-[#2a4073] mt-12">Como Funciona?</h3>
+                <p>Nossa metodologia foca na renovação espiritual através de grupos de estudo, mentorias individuais e materiais práticos. Trabalhamos os pilares do caráter, da vida familiar, da integridade financeira e do sucesso nos negócios sob uma perspectiva cristã.</p>
+                
+                <div class="bg-[#2a4073] text-white p-10 rounded-3xl shadow-2xl my-12 text-center">
+                    <h4 class="text-2xl font-bold mb-4">"Não há homem fraco demais para ser usado por Deus. Há apenas homens dispostos a serem moldados."</h4>
+                    <p class="opacity-80">— Fabiano Lucas, Escritor do Best-Seller "Homens Líderes"</p>
+                </div>
+
+                <h3 class="text-3xl font-bold text-[#2a4073]">Por que participar?</h3>
+                <ul class="list-disc pl-6 space-y-4">
+                    <li><strong>Restauração da Identidade:</strong> Entenda quem você é em Deus, livre de traumas e pesos do passado.</li>
+                    <li><strong>Liderança Familiar:</strong> Aprenda a guiar sua esposa e filhos com autoridade espiritual e afeto.</li>
+                    <li><strong>Comunidade Forte:</strong> Conecte-se com outros homens que compartilham dos mesmos valores e desafios.</li>
+                    <li><strong>Propósito e Carreira:</strong> Alinhe seus talentos profissionais ao chamado do Reino.</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -72,43 +90,45 @@
     <section id="materiais" class="py-24 bg-gray-50 border-t border-gray-200">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-[#2a4073] mb-4">Materiais Oficiais</h2>
-                <p class="text-gray-600 max-w-xl mx-auto">Materiais exclusivos para sua jornada de restauração.</p>
+                <h2 class="text-4xl font-bold text-[#2a4073] mb-4">Downloads Gratuitos</h2>
+                <p class="text-gray-600 max-w-xl mx-auto">Acesse as ferramentas oficiais para iniciar sua jornada hoje mesmo.</p>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition flex flex-col justify-between">
                     <h3 class="font-bold text-xl mb-3 text-[#2a4073]">Guia do Líder</h3>
-                    <p class="text-gray-600 mb-8 text-sm">Instruções para conduzir e pastorear grupos de homens.</p>
+                    <p class="text-gray-600 mb-8 text-sm italic">O manual completo para conduzir grupos.</p>
                     <a href="https://drive.google.com/file/d/1sd7HBdy0ofyCDStw0GW7EdztY-u40r6U/view?usp=drivesdk" target="_blank" class="bg-gray-100 text-center py-3 rounded-lg font-bold hover:bg-[#2a4073] hover:text-white transition">Baixar PDF</a>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition flex flex-col justify-between">
                     <h3 class="font-bold text-xl mb-3 text-[#2a4073]">Caderno Participante</h3>
-                    <p class="text-gray-600 mb-8 text-sm">Guia de estudos para reflexão e anotações.</p>
+                    <p class="text-gray-600 mb-8 text-sm italic">Para reflexão e anotações nos encontros.</p>
                     <a href="https://drive.google.com/file/d/1kFz1qvgK3fRcu3WnyJFosXb7CZaxTE6y/view?usp=drivesdk" target="_blank" class="bg-gray-100 text-center py-3 rounded-lg font-bold hover:bg-[#2a4073] hover:text-white transition">Baixar PDF</a>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition flex flex-col justify-between">
                     <h3 class="font-bold text-xl mb-3 text-[#2a4073]">Devocionais</h3>
-                    <p class="text-gray-600 mb-8 text-sm">7 meditações profundas para fortalecer sua fé.</p>
+                    <p class="text-gray-600 mb-8 text-sm italic">7 dias de meditação e fortalecimento.</p>
                     <a href="https://drive.google.com/file/d/1-ci1OOp9BBIFT_03zYszAOiMnEcs-RfZ/view?usp=drivesdk" target="_blank" class="bg-gray-100 text-center py-3 rounded-lg font-bold hover:bg-[#2a4073] hover:text-white transition">Baixar PDF</a>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition flex flex-col justify-between">
                     <h3 class="font-bold text-xl mb-3 text-[#2a4073]">Compromisso</h3>
-                    <p class="text-gray-600 mb-8 text-sm">Documento oficial para firmar seu pacto cristão.</p>
+                    <p class="text-gray-600 mb-8 text-sm italic">O pacto oficial do Homem Líder.</p>
                     <a href="https://drive.google.com/file/d/14cwfCzTbq4mqjKQD8Jg9LdnrOywo_yWj/view?usp=drivesdk" target="_blank" class="bg-gray-100 text-center py-3 rounded-lg font-bold hover:bg-[#2a4073] hover:text-white transition">Baixar PDF</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#2a4073] text-white py-16 border-t border-blue-900/30">
+    <footer class="bg-[#2a4073] text-white py-16">
         <div class="container mx-auto px-6 text-center">
-            <h3 class="text-2xl font-bold mb-8 italic">Homens Líderes</h3>
-            <div class="space-y-2 mb-10">
-                <p>WhatsApp: (14) 99146-9879</p>
-                <p>Email: fabianofer51@gmail.com</p>
+            <h3 class="text-3xl font-bold mb-4 italic">Homens Líderes</h3>
+            <p class="text-blue-100 mb-10">Liderança | Família | Restauração</p>
+            <div class="flex flex-col md:flex-row justify-center gap-8 mb-12 text-sm">
+                <p><strong>WhatsApp:</strong> (14) 99146-9879</p>
+                <p><strong>Email:</strong> fabianofer51@gmail.com</p>
+                <p><strong>Instagram:</strong> @fabianolucas_oficial</p>
             </div>
-            <div class="opacity-50 text-xs">
+            <div class="opacity-50 text-xs border-t border-white/10 pt-8">
                 &copy; 2026 Homens Líderes - Fabiano Lucas Ferreira. Todos os direitos reservados.
             </div>
         </div>
